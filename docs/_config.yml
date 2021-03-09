@@ -27,8 +27,11 @@ url: "https://nagstamon.de" # the base hostname & protocol for your site, e.g. h
 twitter_username: nagstamon
 github_username:  henriwahl/nagstamon
 
+repository: henriwahl/nagstamon
+
 # Build settings
-theme: minima
+#theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
