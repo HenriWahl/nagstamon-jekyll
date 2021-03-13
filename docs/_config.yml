@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nagstamon.de" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nagstamon
-github_username:  henriwahl/nagstamon
+github_username:  henriwahl
 
 repository: henriwahl/nagstamon
 
@@ -34,6 +34,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
+rss: rss feed
 feed:
   path: feed
 
