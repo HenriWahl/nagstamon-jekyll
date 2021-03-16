@@ -8,4 +8,6 @@ RUN bundle install --gemfile=/tmp/Gemfile
 
 WORKDIR /jekyll
 
-CMD bundle exec jekyll serve --host 0.0.0.0 --livereload
+CMD bundle install && \
+    bundle exec jekyll serve --host 0.0.0.0 --livereload
+ 
