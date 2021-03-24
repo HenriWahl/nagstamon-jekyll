@@ -112,4 +112,4 @@ Many monitor server types are supported and the number is growing **thanks to th
 
   - some have **extra options**:
 
-    ![servers](/assets/images/features-servers-icingaweb2.png)   
+    ![servers](/assets/images/features-servers-linux-icingaweb2.png)   
