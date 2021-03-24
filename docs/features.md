@@ -6,7 +6,6 @@ permalink: /features
 
 # Features
 
-_This page will become a new incarnation of [https://nagstamon.ifw-dresden.de/features/](https://nagstamon.ifw-dresden.de/features/)._
 
 ## General
 
@@ -112,4 +111,34 @@ Many monitor server types are supported and the number is growing **thanks to th
 
   - some have **extra options**:
 
-    ![servers](/assets/images/features-servers-linux-icingaweb2.png)   
+    ![servers](/assets/images/features-servers-linux-icingaweb2.png)
+
+
+## Shortcuts
+
+The status window offers several shortcuts:
+
+  - **links** to the **monitor** web page and the respective **hosts**, **services** and **history** pages:
+
+    ![links](/assets/images/features-links-monitor.png)
+
+  - easy access to all monitor web pages, even those without problems, is provided by **menu**:
+
+    ![links](/assets/images/features-toparea-monitors.png)
+
+  - available via **hamburger menu** too:
+
+    ![links](/assets/images/features-toparea-menu.png)
+
+
+## Font size
+
+The used **fonts** and **font size** can be customized as well:
+
+  - for example as Comic Sans in **fullscreen**:
+
+    ![links](/assets/images/features-fonts-fullscreen.png)
+
+  - select in **options dialog**:
+
+    ![links](/assets/images/features-fonts-dialog.png)
