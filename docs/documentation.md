@@ -1,0 +1,195 @@
+---
+layout: default
+title: Documentation
+permalink: /documentation
+---
+
+# Documentation
+
+Get information on the following topics:
+ 
+- [Setup](#setup) – what to do if Nagstamon has been installed
+
+- [Actions](#actions) – custom actions for hosts/services context menu
+
+- [Notifications](https://nagstamon.ifw-dresden.de/docs/notifications/) – how to customize notifications
+
+- [Regular Expressions](https://nagstamon.ifw-dresden.de/docs/regexps/) – how to use regular expressions for filters
+
+- [Requirements](https://nagstamon.ifw-dresden.de/docs/requirements/) – what you need to run Nagstamon, especially if developing
+
+
+## Setup
+
+### Linux
+
+Download Nagstamon as **.deb** or **.rpm** and install its dependencies.
+
+Start it in a terminal:
+
+`# nagstamon`
+
+You can choose a config directory manually:
+
+`# nagstamon <your-custom-configdirectory>`
+
+Alternatively Nagstamon can be found in your Applications menu.
+
+### Windows
+
+Download Nagstamon as **.exe** according to you binary platform (32 or 64 bit) and execute it. Everything should get at its place and you can start it from **Start menu/Programs/Nagstamon**. When run from command line you can pass a config directory in case you want to store it at another place than the default one:
+
+`c:\> "c:\Program Files\Nagstamon\nagstamon.exe" <your-custom-configdirectory> `
+
+Alternatively you can download the matching **.zip** which contains a complete standalone Nagstamon.
+
+### Mac OS
+
+Since version 2.0 Nagstamon does not need any external package to run as it did before. Just download the **.dmg** disk image file and put the included Nagstamon app wherever you like – most probably the **/Applications** folder.
+
+### Other OS / Source
+
+Download Nagstamon as **.tar.gz**, extract the archive, fulfill its [requirements](#requirements) and install Nagstamon into your local python installation:
+
+`# python setup.py install`
+
+The start script mostly is **/usr/local/bin/nagstamon.py**.
+
+### First steps
+
+At the first start of Nagstamon a dialog window appears where you have to configure at least one monitor server to check.
+
+Configure your monitor server installation:
+
+- the monitor server **type**,
+- the **URL** of your monitor main page,
+- only on Nagios, older Icinga and Thruk: the URL to your monitor **CGI** – without any status.cgi etc.
+- the **username**
+- the **password**
+- a **proxy** if necessary
+
+If you want to store the password in your system’s keystore/keyring/vault you can enable it at the first tab of the settings dialog.
+
+The config directory as default is in **$HOME/.nagstamon**.
+
+
+## Actions
+
+For years Nagstamon allowed certain context actions to be taken to failed hosts and services. These actions include acknowledging and connecting via some remote connection methods like SSH and RDP. The already known builtin actions still can be taken but also the user has the freedom to define some actions which fit the needs of the actual environment. Nagstamon comes with some examples.
+
+There are builtin actions:
+
+- **Monitor** – open host/service page of monitor’s web interface in browser
+- **Recheck** – checks the sate of the host/service again
+- **Acknowledge** – allows acknowledging host/service problem like in web interface
+- **Downtime** – maybe a little late but just in case allows to set a host/service into maintenance
+
+These builtin actions are not available for every monitor type:
+
+- **Submit check result** – allows submitting any check result like in web interface – not for every monitor
+- **Archive events** – only for Check_MK
+
+Nagstamon comes with some preconfigured custom actions which simply connect to a host via the protocol stated in their names:
+
+- RDP
+- SSH
+- Telnet
+- VNC
+
+There are also a lot of example but disabled actions included. These actions may be of those types:
+
+- **Browser** – call browser with certain given URL
+- **Command** – call external command with certain related arguments
+- **URL** – call any URL in background with arguments, for example a CGI action
+
+The command and URL calls can be constructed of some placeholder variables:
+
+- **$HOST$** – host as in monitor
+- **$SERVICE$** – service as in monitor
+- **$MONITOR$** – monitor address (https://monitor/….)
+- **$MONITOR-CGI$** – monitor CGI address
+- **$ADDRESS$** – address of host as set in Nagstamon settings (Hostname/DNS/IP)
+- **$USERNAME$** – username on monitor
+- **$STATUS-INFO$** – status information for hosts and services
+- **$PASSWORD$** – username’s password on monitor
+- **$COMMENT-ACK$** – default acknowledge comment
+- **$COMMENT-DOWN$** – default downtime comment
+- **$COMMENT-SUBMIT$** – default submit check result comment
+
+The following examples might illustrate the possibilities provided by custom actions.
+
+
+### 1st Example: Ping command
+
+For diagnosis purposes it might be a good thing to permanently ping a host. To have a console executing such a ping it might take only one click.
+
+First open action settings:
+
+![actions-ping-1](/assets/images/actions-ping-1.png)
+
+There are some example actions one could use to have a look at but here a new action will be created with **“New action…”**:
+
+![actions-ping-2](/assets/images/actions-ping-2.png)
+
+Here we go:
+
+![actions-ping-3](/assets/images/actions-ping-3.png)
+
+As described above there are 3 types of actions. In this case it will be a command so this type will be choosen. An unique name has to be given, for example PING. Some description might help to remember what the actions is good for. The heart of the whole action is the string which will be given as external call. It is OS dependent and would be similar like these:
+
+ - Windows: `start ping -t $ADDRESS$`
+
+ - Linux: `gnome-terminal -e "ping $ADDRESS$"`
+
+ - macOS: `/usr/X11/bin/xterm -e -ping $ADDRESS$`
+
+If an action only applies to services or hosts its target could be set. Regular expressions are optionally possible to filter out hosts and services to keep the actions menu as usable as possible. The behaviour of the popup window could be set too – if it stays opened it might cover a new terminal window.
+
+![actions-ping-4](/assets/images/actions-ping-4.png)
+
+Now the new PING action appears in context menu:
+
+![actions-ping-5](/assets/images/actions-ping-5.png)
+
+After clicking PING a Terminal window appears which runs the ping command with the host address inside:
+
+![actions-ping-6](/assets/images/actions-ping-6.png)
+
+
+### 2nd Example: Performance data in Browser
+
+IcingaWeb2 comes with Grafana integrated and it is an easy task to access the performance data of an host or service in your browser with one click in the context menu. First we need to find out the Grafana-URL of a service:
+
+![actions-browser-1](/assets/images/actions-browser-1.png)
+
+Here we see the URL of the performance data of **host icinga2** with **service disk**:
+
+`http://localhost:8082/icingaweb2/graphite/show/service?host=icinga2&service=disk`
+
+So we need to use this URL when creating an appropriate action and replace **icinga2** by variable **$HOST$**, **disk** by **$SERVICE$** and **http://localhost:8082/icingaweb2/** by **$MONITOR$ which looks this way:
+
+`$MONITOR$/graphite/show/service?host=$HOST$&service=$SERVICE$`
+
+With **type Browser** and **target Service** this is a complete action:
+
+![actions-browser-2](/assets/images/actions-browser-2.png)
+
+The next time a host or service has trouble one could easily access its performance data with one click:
+
+![actions-browser-3](/assets/images/actions-browser-3.png)
+
+
+### 3rd Example: CGI URL call
+
+There are already builtin CGI URL calls like acknowledging a host or service. These can easily be extendend, for example with an acknowledgement of service problems done with one click:
+
+`$MONITOR$/view.py?_transid=$TRANSID$&_do_actions=yes&_do_confirm=Yes!&output_format=python&view_name=service&host=$HOST$&_ack_comment=$COMMENT-ACK$&_acknowledge=Acknowledge&service=$SERVICE$`
+
+This should apply only to a service because the URL for hosts is different:
+
+![actions-url-2](/assets/images/actions-url-1.png)
+
+Now a service can be acknowledged with just one click:
+
+![actions-url-1](/assets/images/actions-url-2.png)
+
