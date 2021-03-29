@@ -12,9 +12,9 @@ Get information on the following topics:
 
 - [Actions](#actions) – custom actions for hosts/services context menu
 
-- [Notifications](https://nagstamon.ifw-dresden.de/docs/notifications/) – how to customize notifications
+- [Notifications](#notifications) – how to customize notifications
 
-- [Regular Expressions](https://nagstamon.ifw-dresden.de/docs/regexps/) – how to use regular expressions for filters
+- [Regular Expressions](#regular-expressions) – how to use regular expressions for filters
 
 - [Requirements](https://nagstamon.ifw-dresden.de/docs/requirements/) – what you need to run Nagstamon, especially if developing
 
@@ -193,3 +193,88 @@ Now a service can be acknowledged with just one click:
 
 ![actions-url-1](/assets/images/actions-url-2.png)
 
+
+## Notifications
+
+### States
+
+Notifications can be triggered by states of different severity:
+
+- WARNING
+- CRITICAL
+- UNKNOWN
+- UNREACHABLE
+- DOWN
+
+### Default Notifications
+
+As default the statusbar or systray icon flashes on new events.
+
+On Linux systems a notification via _libnotify_ on desktop is an additional option.
+
+Users can be notified by default or sound alerts.
+
+### Custom notification actions
+
+There are two kinds of custom notification actions:
+
+- The first allows to define some command to be run if one of the states WARNING, CRITICAL, DOWN or OK appears. Only the command defined for the worst state will be executed. This option is inspired by [https://github.com/HenriWahl/Nagstamon/pull/50](https://github.com/HenriWahl/Nagstamon/pull/50).
+
+- The second allows to run some custom command or script which handles states and status informations itself. The events can be separated by the event separator for easier distinguishing them. Here two options exist:
+    - Handle all events by one command
+    - Handle every event with one separate command
+
+
+## Regular Expressions
+
+Nagstamon allows the use of regular expressions for filtering hosts and services for status popup and actions. Detailed information can be found at [https://docs.python.org/howto/regex.html](https://docs.python.org/howto/regex.html).
+
+Regexp filter settings can be found in filters tab and in actions:
+
+![regexps-1](/assets/images/regexps-1.png)
+
+### 1st Example: Host filter
+
+If the default list of hosts looks like this…
+
+![regexps-2](/assets/images/regexps-2.png)
+
+…and you for whatever reason have to filter out a certain group of hosts, for example all hosts with `centos` in their name, you add this filter…
+
+![regexps-3](/assets/images/regexps-3.png)
+
+…and the list of host gets shorter…
+
+![regexps-4](/assets/images/regexps-4.png)
+
+### 2nd Example: Reverse host filter
+
+If you need to see only the hosts of a certain type, for example only hosts with `www` in their name, just add the **reverse** option…
+
+![regexps-5](/assets/images/regexps-5.png)
+
+and monitor only the hosts you are interested in:
+
+![regexps-6](/assets/images/regexps-6-1.png)
+
+### 3rd Example: Multiple Service filters
+
+Surprisingly filters for services work in a similar way. To raise the level of complexity a little bit in this example there should be only shown `Sendmail` or `DNS` services. Multiple items get concatenated with `|`, so the filter looks like this:
+
+![regexps-7](/assets/images/regexps-7.png)
+
+The resulting list is shorter:
+
+![regexps-8](/assets/images/regexps-8.png)
+
+### 4th Example: More regular expressionism
+
+The above examples are pretty simple. If you need more sophisticated filters here are some more rules:
+
+- **^** marks the beginning of an expression
+- **$** marks the end
+- **.** is any character
+- **.\*** is any number of any character
+- **\|** adds several expressions with logical OR
+
+For further information please see [https://docs.python.org/howto/regex.html](https://docs.python.org/howto/regex.html).
