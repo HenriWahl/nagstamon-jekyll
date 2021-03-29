@@ -16,7 +16,7 @@ Get information on the following topics:
 
 - [Regular Expressions](#regular-expressions) – how to use regular expressions for filters
 
-- [Requirements](https://nagstamon.ifw-dresden.de/docs/requirements/) – what you need to run Nagstamon, especially if developing
+- [Requirements](#requirements) – what you need to run Nagstamon, especially if developing
 
 
 ## Setup
@@ -278,3 +278,76 @@ The above examples are pretty simple. If you need more sophisticated filters her
 - **\|** adds several expressions with logical OR
 
 For further information please see [https://docs.python.org/howto/regex.html](https://docs.python.org/howto/regex.html).
+
+
+## Requirements
+
+If you do not use a [binary release](/download) of Nagstamon, the following requirements have to be fulfilled:
+
+- **Python** >= 3.6, available at [https://www.python.org/downloads/](https://www.python.org/downloads/)
+- Several Python modules available via **PIP**:
+    
+    - **beautifulsoup4** – [http://www.crummy.com/software/BeautifulSoup/](http://www.crummy.com/software/BeautifulSoup/)
+    - **keyring** – [https://github.com/jaraco/keyring](https://github.com/jaraco/keyring)
+    - **lxml** – [http://lxml.de/](http://lxml.de/)
+    - **psutil** – [https://github.com/giampaolo/psutil](https://github.com/giampaolo/psutil)
+    
+    - **pypiwin32** – [https://pypi.python.org/pypi/pypiwin32](https://pypi.python.org/pypi/pypiwin32)
+    - **pyqt5** &gt;= 5.5 – [https://riverbankcomputing.com/software/pyqt/](https://riverbankcomputing.com/software/pyqt/)
+    - **pysocks** – [https://github.com/Anorov/PySocks](https://github.com/Anorov/PySocks)
+    
+    - **python-dateutil** – [https://dateutil.readthedocs.io/en/stable/](https://dateutil.readthedocs.io/en/stable/)
+    - **requests** – [http://docs.python-requests.org/en/latest/](http://docs.python-requests.org/en/latest/)
+    - **requests-kerberos** – [https://github.com/requests/requests-kerberos](https://github.com/requests/requests-kerberos)
+    - **requests-gssapi** – [https://github.com/pythongssapi/requests-gssapi](https://github.com/pythongssapi/requests-gssapi)
+
+### Linux
+
+All of these are included in any Linux distribution – no PIP required.
+
+For creation of binary packages one might need to install the typical packaging utilities of the choosen distribution to use the included `build.py` script.
+
+### Windows
+
+If you want to run Nagstamon from sources on Windows, you have to run this PIP command after installing Python. Note that even if there is a newer version right now only keyring 10.5.1 works as expected in Windows:
+
+    C:\python37\scripts\pip install beautifulsoup4 \
+                                    keyring==10.5.1 \
+                                    lxml \
+                                    psutil \
+                                    pypiwin32 \
+                                    pyqt5==5.13.2 \
+                                    pysocks \
+                                    python-dateutil \
+                                    requests \
+                                    requests-kerberos \
+                                    setuptools==44.1.1
+
+If you want to create binary packages with the distributed `build.py` script, you also need
+
+- **PyInstaller** – [http://www.pyinstaller.org/](http://www.pyinstaller.org/)
+- **InnoSetup** >= 5.5 – [http://www.jrsoftware.org/isdl.php](http://www.jrsoftware.org/isdl.php)
+
+**PyInstaller** lastest development version which is known to work with Python 3.7 is needed so this one has to be pulled by pip:
+
+    C:\python37\scripts\pip install pyinstaller
+
+### macOS
+
+Best experiences are being made with Python 3 from [Homebrew](https://brew.sh). After installing Python 3 the other dependencies might be retrieved via PIP:
+
+    # brew install python3
+    # pip3 install beautifulsoup4 \
+                   keyring==10.5.1 \
+                   lxml \
+                   psutil \
+                   pyqt5==5.13.2 \
+                   pysocks \
+                   python-dateutil \
+                   requests \
+                   requests-gssapi \
+                   setuptools==44.1.1
+
+For binary packages made by the included `build.py` script you will need **PyInstaller** too.
+
+    # pip3 install pyinstaller
