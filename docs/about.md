@@ -51,5 +51,5 @@ Experimentally supported monitors:
 
 ## Contact
 
-If you find any **problems** please open an issue at **[Nagstamon issues page at GitHub](https://github.com/HenriWahl/Nagstamon/issues)**.
+If you find any problems please open an issue at [Nagstamon issues page at GitHub](https://github.com/HenriWahl/Nagstamon/issues).
 Alternatively use mail address [contact@nagstamon.de](mailto:contact@nagstamon.de).
