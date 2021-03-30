@@ -1,6 +1,10 @@
 ---
 layout: default
+show_in_header: false
+show_in_footer: false
 ---
+
+## About
 
 ![Nagstamon as floating statusbar](/assets/images/index_1.png)
 
@@ -44,3 +48,8 @@ Experimentally supported monitors:
 * [Sensu](https://sensu.io/)
 * [SNAG-View 3](https://www.snag-view.de/)
 * [Zenoss](https://zenoss.com/)
+
+## Contact
+
+If you find any **problems** please open an issue at **[Nagstamon issues page at GitHub](https://github.com/HenriWahl/Nagstamon/issues)**.
+Alternatively use mail address [contact@nagstamon.de](mailto:contact@nagstamon.de).
