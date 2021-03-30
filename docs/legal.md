@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Legal Notice
-permalink: /legal-notice
+permalink: /legal
 robots: noindex, nofollow
 show_in_header: false
 ---
