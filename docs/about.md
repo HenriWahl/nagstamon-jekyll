@@ -1,7 +1,7 @@
 ---
 layout: default
 show_in_header: false
-show_in_footer: false
+permalink: /
 ---
 
 ## About

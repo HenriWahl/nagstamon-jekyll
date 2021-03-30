@@ -30,7 +30,7 @@ If you are using [Homebrew](https://brew.sh) you can install Nagstamon easily vi
 
 ### Debian
 
-If you are using any [Debian](https://www.debian.org)-based distro like [Ubuntu](https://www.ubuntu.com) you can install Nagstamon from their **official repo**:
+If you are using any [Debian](https://www.debian.org)-based distro like [Ubuntu](https://www.ubuntu.com) you can install Nagstamon from their official repo:
 
 `apt install nagstamon`
 
