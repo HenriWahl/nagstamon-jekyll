@@ -8,11 +8,11 @@ permalink: /download
 
 ## Stable release 3.4.1
 
-Please get the latest stable release **3.4.1** from **[GitHub stable release](https://github.com/HenriWahl/Nagstamon/releases/tag/3.4.1)**.
+Get the latest stable release **3.4.1** from **[GitHub stable release](https://github.com/HenriWahl/Nagstamon/releases/tag/3.4.1)**.
 
 ## Latest development version
 
-Get the latest binaries created by [GitHub Actions](https://github.com/features/actions) automatically. Download from **[GitHub latest release](https://github.com/HenriWahl/Nagstamon/releases/tag/latest)**.
+Get the latest binaries created automatically by [GitHub Actions](https://github.com/features/actions). Download from **[GitHub latest release](https://github.com/HenriWahl/Nagstamon/releases/tag/latest)**.
 
 ## Download from repositories
 
