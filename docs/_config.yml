@@ -30,7 +30,7 @@ github_username:  henriwahl
 repository: henriwahl/nagstamon
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-sitemap
