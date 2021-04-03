@@ -33,6 +33,7 @@ repository: henriwahl/nagstamon
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 rss: rss feed
 feed:
