@@ -6,9 +6,9 @@ permalink: /download
 
 # Download
 
-## Stable release 3.4.1
+## Stable release
 
-Get the latest stable release **3.4.1** from **[GitHub stable release](https://github.com/HenriWahl/Nagstamon/releases/tag/3.4.1)**.
+Get the latest stable release **3.6.0** from **[GitHub stable release](https://github.com/HenriWahl/Nagstamon/releases/tag/3.6.0)**.
 
 ## Latest development version
 
