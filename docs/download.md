@@ -50,3 +50,7 @@ The **latest** release for Fedora is available too via Nagstamon repository - ju
 
 `wget https://nagstamon.de/repo/fedora/nagstamon-latest.repo --output-document=/etc/yum.repos.d/nagstamon.repo`
 
+Both version simply get installed by:
+
+`dnf install nagstamon`
+
