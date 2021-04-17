@@ -39,6 +39,7 @@ rss: rss feed
 feed:
   path: feed
 
+show_excerpts: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
