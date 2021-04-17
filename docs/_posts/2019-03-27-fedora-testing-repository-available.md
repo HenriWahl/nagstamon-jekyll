@@ -11,9 +11,9 @@ According to [https://bugzilla.redhat.com/show_bug.cgi?id=1466709](https://bugzi
 
 Get it like:
 
-` wget /repo/fedora/nagstamon-testing.repo --output-document=/etc/yum.repos.d/nagstamon-testing.repo `
+`wget /repo/fedora/nagstamon-testing.repo --output-document=/etc/yum.repos.d/nagstamon-testing.repo`
 
-` dnf install nagstamon `
+`dnf install nagstamon`
 
 This repository currently is not GPG signed – just before someone is asking.
 
