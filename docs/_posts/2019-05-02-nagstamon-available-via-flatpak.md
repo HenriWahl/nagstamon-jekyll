@@ -15,11 +15,11 @@ Thanks to the effords of [@gabops](https://github.com/gabops) and the [Flatpak](
 Just install via:
 
 
-` flatpak install flathub de.ifw_dresden.nagstamon `
+`flatpak install flathub de.ifw_dresden.nagstamon`
 
 
 Run it via:
 
 
-` flatpak run de.ifw_dresden.nagstamon `
+`flatpak run de.ifw_dresden.nagstamon`
 
