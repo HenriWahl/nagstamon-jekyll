@@ -40,7 +40,6 @@ feed:
   path: feed
 
 show_excerpts: true
-paginate: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
