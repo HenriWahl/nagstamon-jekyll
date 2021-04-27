@@ -30,14 +30,30 @@ github_username:  henriwahl
 repository: henriwahl/nagstamon
 
 # Build settings
-theme: minima
+#theme: minima
+remote_theme: aterenin/minima-reboot
 plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
   - jekyll-feed
-  - jekyll-sitemap
+  - jekyll-redirect-from
 
 rss: rss feed
 feed:
   path: feed
+
+minima_reboot:
+  date_format: "%b %-d, %Y"
+  date_format_short: "%b %-d"
+
+header_pages:
+- news.md
+- documentation.md
+
+footer_icons:
+- username: henriwahl/nagstamon
+  url: https://github.com/henriwahl/nagstamon
+  icon: icon-github.svg
 
 show_excerpts: true
 
@@ -49,14 +65,15 @@ show_excerpts: true
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
+   - minima-reboot.gemspec

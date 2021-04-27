@@ -1,7 +1,6 @@
 ---
-layout: news
+layout: allposts
 title: News
+description: All news posts
 permalink: /news
 ---
-
-Get the following news as RSS feed from [https://nagstamon.de/feed](/feed).
