@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 show_in_header: false
+title: About
 permalink: /
 ---
-
-## About
 
 ![Nagstamon as floating statusbar](/assets/images/index_1.png)
 

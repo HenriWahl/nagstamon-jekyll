@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
 title: Documentation
 permalink: /documentation
 ---
-
-# Documentation
 
 Get information on the following topics:
  

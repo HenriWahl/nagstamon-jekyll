@@ -1,12 +1,10 @@
 ---
-layout: default
+layout: page
 title: Legal Notice
 permalink: /legal
 robots: noindex, nofollow
 show_in_header: false
 ---
-
-# Legal Notice
 
 ## Impressum
 

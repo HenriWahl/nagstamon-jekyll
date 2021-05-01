@@ -48,7 +48,10 @@ minima_reboot:
 
 header_pages:
 - news.md
+- download.md
+- features.md
 - documentation.md
+- legal.md
 
 footer_icons:
 - username: henriwahl/nagstamon
