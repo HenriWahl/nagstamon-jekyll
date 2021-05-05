@@ -26,7 +26,7 @@ If you are using the great [Chocolatey](https://chocolatey.org) you can install 
 
 If you are using [Homebrew](https://brew.sh) you can install Nagstamon easily via:
 
-`brew cask install nagstamon`
+`brew install --cask nagstamon`
 
 ### Debian
 
