@@ -1,11 +1,8 @@
 ---
-layout: default
+layout: page
 title: Features
 permalink: /features
 ---
-
-# Features
-
 
 ## General
 

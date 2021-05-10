@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
 title: Documentation
 permalink: /documentation
 ---
-
-# Documentation
 
 Get information on the following topics:
  
@@ -27,11 +25,15 @@ Download Nagstamon as **.deb** or **.rpm** and install its dependencies.
 
 Start it in a terminal:
 
-`# nagstamon`
+```terminal
+# nagstamon
+```
 
 You can choose a config directory manually:
 
-`# nagstamon <your-custom-configdirectory>`
+```terminal
+# nagstamon <your-custom-configdirectory>
+```
 
 Alternatively Nagstamon can be found in your Applications menu.
 
@@ -39,7 +41,9 @@ Alternatively Nagstamon can be found in your Applications menu.
 
 Download Nagstamon as **.exe** according to you binary platform (32 or 64 bit) and execute it. Everything should get at its place and you can start it from **Start menu/Programs/Nagstamon**. When run from command line you can pass a config directory in case you want to store it at another place than the default one:
 
-`c:\> "c:\Program Files\Nagstamon\nagstamon.exe" <your-custom-configdirectory> `
+```terminal
+c:\> "c:\Program Files\Nagstamon\nagstamon.exe" <your-custom-configdirectory> 
+```
 
 Alternatively you can download the matching **.zip** which contains a complete standalone Nagstamon.
 
@@ -51,7 +55,9 @@ Since version 2.0 Nagstamon does not need any external package to run as it did 
 
 Download Nagstamon as **.tar.gz**, extract the archive, fulfill its [requirements](#requirements) and install Nagstamon into your local python installation:
 
-`# python setup.py install`
+```terminal
+# python setup.py install
+```
 
 The start script mostly is **/usr/local/bin/nagstamon.py**.
 
@@ -137,11 +143,20 @@ Here we go:
 
 As described above there are 3 types of actions. In this case it will be a command so this type will be choosen. An unique name has to be given, for example PING. Some description might help to remember what the actions is good for. The heart of the whole action is the string which will be given as external call. It is OS dependent and would be similar like these:
 
- - Windows: `start ping -t $ADDRESS$`
+ - Windows: 
+    ```terminal
+    start ping -t $ADDRESS$
+    ```
 
- - Linux: `gnome-terminal -e "ping $ADDRESS$"`
+ - Linux:
+    ```terminal
+    gnome-terminal -e "ping $ADDRESS$"
+    ```
 
- - macOS: `/usr/X11/bin/xterm -e -ping $ADDRESS$`
+ - macOS:
+    ```terminal
+   /usr/X11/bin/xterm -e -ping $ADDRESS$
+   ```
 
 If an action only applies to services or hosts its target could be set. Regular expressions are optionally possible to filter out hosts and services to keep the actions menu as usable as possible. The behaviour of the popup window could be set too – if it stays opened it might cover a new terminal window.
 
@@ -311,17 +326,19 @@ For creation of binary packages one might need to install the typical packaging 
 
 If you want to run Nagstamon from sources on Windows, you have to run this PIP command after installing Python. Note that even if there is a newer version right now only keyring 10.5.1 works as expected in Windows:
 
-    C:\python37\scripts\pip install beautifulsoup4 \
-                                    keyring==10.5.1 \
-                                    lxml \
-                                    psutil \
-                                    pypiwin32 \
-                                    pyqt5==5.13.2 \
-                                    pysocks \
-                                    python-dateutil \
-                                    requests \
-                                    requests-kerberos \
-                                    setuptools==44.1.1
+```terminal
+C:\python37\scripts\pip install beautifulsoup4 \
+                                keyring==10.5.1 \
+                                lxml \
+                                psutil \
+                                pypiwin32 \
+                                pyqt5==5.13.2 \
+                                pysocks \
+                                python-dateutil \
+                                requests \
+                                requests-kerberos \
+                                setuptools==44.1.1
+```
 
 If you want to create binary packages with the distributed `build.py` script, you also need
 
@@ -330,24 +347,30 @@ If you want to create binary packages with the distributed `build.py` script, yo
 
 **PyInstaller** lastest development version which is known to work with Python 3.7 is needed so this one has to be pulled by pip:
 
-    C:\python37\scripts\pip install pyinstaller
+```terminal
+C:\python37\scripts\pip install pyinstaller
+```
 
 ### macOS
 
 Best experiences are being made with Python 3 from [Homebrew](https://brew.sh). After installing Python 3 the other dependencies might be retrieved via PIP:
 
-    # brew install python3
-    # pip3 install beautifulsoup4 \
-                   keyring==10.5.1 \
-                   lxml \
-                   psutil \
-                   pyqt5==5.13.2 \
-                   pysocks \
-                   python-dateutil \
-                   requests \
-                   requests-gssapi \
-                   setuptools==44.1.1
+```terminal
+# brew install python3
+# pip3 install beautifulsoup4 \
+                keyring==10.5.1 \
+                lxml \
+                psutil \
+                pyqt5==5.13.2 \
+                pysocks \
+                python-dateutil \
+                requests \
+                requests-gssapi \
+                setuptools==44.1.1
+```
 
 For binary packages made by the included `build.py` script you will need **PyInstaller** too.
 
-    # pip3 install pyinstaller
+```terminal
+# pip3 install pyinstaller
+```
