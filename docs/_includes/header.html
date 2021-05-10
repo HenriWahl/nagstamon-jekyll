@@ -2,8 +2,7 @@
     <div id="nav-container" class="container position-relative d-flex justify-content-between align-items-center">
       {% assign default_paths = site.pages | map: "path" %}
       {% assign page_paths = site.header_pages | default: default_paths %}
-     <!-- <a class="h4 m-0 text-dark" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>-->
-      <a class="h4 m-0" rel="author" href="{{ "/" | relative_url }}"><img src="/assets/images/nagstamon_logo.svg"></a>
+      <a class="h4 m-0" rel="author" href="{{ "/" | relative_url }}"><img width=180 heigth=42 src="/assets/images/nagstamon_logo.svg"></a>
       {% if page_paths %}
         <nav id="nav-menu-container" class="text-right navbar-light">
           <input type="checkbox" id="nav-trigger" class="d-none"/>
@@ -13,15 +12,21 @@
           <div id="nav-menu" class="d-none d-md-block">
             {% for path in page_paths %}
               {% assign menu_page = site.pages | where: "path", path | first %}
-              {% if page.path == menu_page.path %}
-                {% assign mode = "btn-light active" %}
-              {% elsif menu_page.title == "Download" %}
-                {% assign mode = "btn-success" %}
+              {% assign download_icon = "" %}
+              {% if menu_page.title == "Download" %}
+                {% if page.path == menu_page.path %}
+                  {% assign btn_mode = "btn-secondary" %}
+                {% else %}
+                  {% assign btn_mode = "btn-success" %}
+                {% endif %}
+                {% assign download_icon="<img class='mr-1' width=16 height=16 src=/assets/images/cloud-download.svg>" %}
+              {% elsif page.path == menu_page.path %}
+                {% assign btn_mode = "btn-secondary" %}
               {% else %}
-                {% assign mode = "btn-light" %}
+                {% assign btn_mode = "btn-light" %}
               {% endif %}
               {% if menu_page.title %}
-                <a class="btn {{ mode }}" href="{{ menu_page.url | relative_url }}">{{ menu_page.title | escape }}</a>
+                <a class="btn {{ btn_mode }}" href="{{ menu_page.url | relative_url }}">{{ download_icon }}{{ menu_page.title | escape }}</a>
               {% endif %}
             {% endfor %}
           </div>
