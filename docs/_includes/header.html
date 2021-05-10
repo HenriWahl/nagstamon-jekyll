@@ -23,10 +23,10 @@
               {% elsif page.path == menu_page.path %}
                 {% assign btn_mode = "btn-secondary" %}
               {% else %}
-                {% assign btn_mode = "btn-light" %}
+                {% assign btn_mode = "" %}
               {% endif %}
               {% if menu_page.title %}
-                <a class="btn {{ btn_mode }}" href="{{ menu_page.url | relative_url }}">{{ download_icon }}{{ menu_page.title | escape }}</a>
+                <a class="btn btn-sm {{ btn_mode }}" href="{{ menu_page.url | relative_url }}">{{ download_icon }}{{ menu_page.title | escape }}</a>
               {% endif %}
             {% endfor %}
           </div>
