@@ -17,12 +17,12 @@
               {%- endfor -%}
               <br>
               <li>
-                <a href="/legal">Impressum</a>
+                <a href="/legal">Legal Notice / Impressum</a>
               </li>
           </ul>
         </div>
         {% if site.footer_icons %}
-        <div class="col-6 col-lg-3">
+        <div class="col-6 col-lg-4">
           <ul class="list-unstyled">
             {% for footer_icon in site.footer_icons %}
               <li>
@@ -36,7 +36,7 @@
           </ul>
         </div>
         {% endif %}
-        <div class="col-12 col-lg">
+        <div class="col-12 col-lg-5">
           <p class="text-secondary text-justify">{{ site.description | escape }}</p>
         </div>
       </div>
