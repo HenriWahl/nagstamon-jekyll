@@ -53,7 +53,7 @@ header_pages:
 - documentation.md
 
 footer_icons:
-- username: henriwahl/nagstamon
+- username: nagstamon
   url: https://github.com/henriwahl/nagstamon
   icon: minima-social-icons-github.svg
 - username: nagstamon
