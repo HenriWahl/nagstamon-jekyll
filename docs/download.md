@@ -48,7 +48,7 @@ If you are using the shiny Flatpak you can install Nagstamon via:
 
 ### Fedora
 
-The **stable** release for Fedora is available via Nagstamon repository - just throw https://nagstamon.de/repo/fedora/nagstamon.repo into /etc/yum.repos.d:
+The **stable** release for Fedora is available via Nagstamon repository - just throw [https://nagstamon.de/repo/fedora/nagstamon.repo](https://nagstamon.de/repo/fedora/nagstamon.repo) into _/etc/yum.repos.d_:
 
 ```terminal
 # wget https://nagstamon.de/repo/fedora/nagstamon.repo --output-document=/etc/yum.repos.d/nagstamon.repo
