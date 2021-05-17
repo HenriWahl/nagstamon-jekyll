@@ -9,7 +9,7 @@
           <label for="nav-trigger" aria-label="button" class="m-2 d-inline-block d-md-none navbar-toggler-icon">
           </label>
   
-          <div id="nav-menu" class="d-none d-md-block">
+          <div id="nav-menu" class="d-none d-md-block p-1">
             {% for path in page_paths %}
               {% assign menu_page = site.pages | where: "path", path | first %}
               {% assign download_icon = "" %}
@@ -26,7 +26,7 @@
                 {% assign btn_mode = "" %}
               {% endif %}
               {% if menu_page.title %}
-                <a class="btn btn-sm {{ btn_mode }}" href="{{ menu_page.url | relative_url }}">{{ download_icon }}{{ menu_page.title | escape }}</a>
+                <a class="btn btn-sm {{ btn_mode }} my-1 d-block d-md-inline-block"" href="{{ menu_page.url | relative_url }}">{{ download_icon }}{{ menu_page.title | escape }}</a>
               {% endif %}
             {% endfor %}
           </div>
