@@ -57,7 +57,7 @@ The **stable** release for Fedora is available via Nagstamon repository - just t
 The **latest** release for Fedora is available too via Nagstamon repository - just throw https://nagstamon.de/repo/fedora/nagstamon-latest.repo into /etc/yum.repos.d:
 
 ```terminal
-# wget https://nagstamon.de/repo/fedora/nagstamon-latest.repo -O /etc/yum.repos.d/nagstamon.repo
+# wget https://nagstamon.de/repo/fedora/nagstamon-latest.repo -O /etc/yum.repos.d/nagstamon-latest.repo
 ```
 
 Both version simply get installed by:
