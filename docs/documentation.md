@@ -327,17 +327,7 @@ For creation of binary packages one might need to install the typical packaging 
 If you want to run Nagstamon from sources on Windows, you have to run this PIP command after installing Python. Note that even if there is a newer version right now only keyring 10.5.1 works as expected in Windows:
 
 ```terminal
-C:\python37\scripts\pip install beautifulsoup4 \
-                                keyring==10.5.1 \
-                                lxml \
-                                psutil \
-                                pypiwin32 \
-                                pyqt5==5.13.2 \
-                                pysocks \
-                                python-dateutil \
-                                requests \
-                                requests-kerberos \
-                                setuptools==44.1.1
+C:\python37\scripts\pip install -r build/requirements/windows.txt
 ```
 
 If you want to create binary packages with the distributed `build.py` script, you also need
@@ -357,16 +347,7 @@ Best experiences are being made with Python 3 from [Homebrew](https://brew.sh). 
 
 ```terminal
 # brew install python3
-# pip3 install beautifulsoup4 \
-                keyring==10.5.1 \
-                lxml \
-                psutil \
-                pyqt5==5.13.2 \
-                pysocks \
-                python-dateutil \
-                requests \
-                requests-gssapi \
-                setuptools==44.1.1
+# pip3 install  -r build/requirements/macos.txt
 ```
 
 For binary packages made by the included `build.py` script you will need **PyInstaller** too.
