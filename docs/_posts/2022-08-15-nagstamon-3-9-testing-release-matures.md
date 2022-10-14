@@ -10,7 +10,7 @@ The current testing release 3.9 which is about to become the stable 3.10 one day
 Main improvements are:
 
 - switch to Qt6 on most platforms
-- updated Centeon
+- updated Centreon
 - improved Zabbix
 - Icinga2 fixes
 - Checkmk 2.0 fixes
