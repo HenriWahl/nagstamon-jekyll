@@ -14,8 +14,8 @@ Main improvements are:
 - updated Centreon
 - improved Zabbix
 - Icinga2 fixes
-- Prometheus fixes
 - new IcingaDB support
+- Prometheus fixes
 - Checkmk 2.0 fixes
 - and many more small fixes
 
