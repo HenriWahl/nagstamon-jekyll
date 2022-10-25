@@ -6,9 +6,9 @@ categories: news
 permalink: /nagstamon-3-10-out
 ---
 
-The current testing release 3.9-20221011 has many changes with made it more mature in the last months.
-It does not much left on its way to stable 3.10. release.
-
+Once again there is a new release of Nagstamon. It mostly consists of contributions by the community
+and a switch to the latest major release of the underlaying Qt framework.
+The results are better support for current monitoring servers and GUI features like higher resolution displays.
 
 Main improvements are:
 
@@ -22,7 +22,10 @@ Main improvements are:
 - show only active monitor servers in menus
 - and many more small fixes
 
-Some hints:
+Some users might notice some of these changes:
 
 - newer IcingaWeb installations might need switching to IcingaDBWeb server mode in Nagstamon
 - multiscreen setups now access screens by name and not by number as before
+
+As always get it at https://nagstamon.de/download.
+
