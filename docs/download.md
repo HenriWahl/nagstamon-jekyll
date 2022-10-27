@@ -38,14 +38,6 @@ If you are using any [Debian](https://www.debian.org)-based distro like [Ubuntu]
 # apt install nagstamon
 ```
 
-### Flatpak
-
-If you are using the shiny Flatpak you can install Nagstamon via:
-
-```terminal
-# flatpak install flathub de.ifw_dresden.nagstamon
-```
-
 ### Fedora
 
 The **stable** release for Fedora is available via Nagstamon repository - just throw [https://nagstamon.de/repo/fedora/nagstamon.repo](https://nagstamon.de/repo/fedora/nagstamon.repo) into _/etc/yum.repos.d_:
