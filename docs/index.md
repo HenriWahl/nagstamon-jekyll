@@ -24,7 +24,7 @@ It is inspired by [Nagios Checker for Firefox](https://web.archive.org/web/20151
 
 Nagstamon is released under the [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) and free to use and modify.
 
-Nagstamon is written in Python 3 and uses the Qt 5 GUI toolkit which makes it very portable. It has been tested successfully on latest Ubuntu, Debian, Fedora, Windows, NetBSD, OpenBSD, FreeBSD and macOS.
+Nagstamon is written in Python 3 and uses the Qt 5/6 GUI toolkit which makes it very portable. It has been tested successfully on latest Ubuntu, Debian, Fedora, Windows, NetBSD, OpenBSD, FreeBSD and macOS.
 It works at least with GNOME, KDE, Windows and macOS desktops.
 
 Successfully tested monitors include:
@@ -38,12 +38,12 @@ Successfully tested monitors include:
 * [Thruk](https://www.thruk.org/) 1.5.0+
 * [Zabbix](https://www.zabbix.com) 2.2+
 * [Monitos](https://www.monitos.de/) 4.4+
+* [Prometheus](https://prometheus.io/)
 
 Experimentally supported monitors:
 
 * [Livestatus](https://docs.checkmk.com/latest/en/livestatus.html)
 * [Monitos3](https://www.monitos.de/)
-* [Prometheus](https://prometheus.io/)
 * [Sensu](https://sensu.io/)
 * [SNAG-View 3](https://www.snag-view.de/)
 * [Zenoss](https://zenoss.com/)
