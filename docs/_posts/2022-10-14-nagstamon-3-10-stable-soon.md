@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nagstamon 3.9 testing release matures 
+title: Nagstamon 3.10 stable soon
 date: 2022-10-14 23:51:34
 categories: news
 permalink: /nagstamon-3-10-stable-soon
