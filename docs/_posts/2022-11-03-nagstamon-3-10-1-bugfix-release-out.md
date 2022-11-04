@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nagstamon 3.10.1 bugfix release out
-date: 2022-11-04 08:01:27
+date: 2022-11-04 08:01:28
 categories: news
 permalink: /nagstamon-3-10-1-bugfix-release-out
 ---
