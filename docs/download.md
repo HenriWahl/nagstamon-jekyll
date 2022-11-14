@@ -38,6 +38,8 @@ If you are using any [Debian](https://www.debian.org)-based distro like [Ubuntu]
 # apt install nagstamon
 ```
 
+**Note:** the move to Qt6 made Ubuntu versions older than 20.04 not work anymore.
+
 ### Fedora
 
 The **stable** release for Fedora is available via Nagstamon repository - just throw [https://nagstamon.de/repo/fedora/nagstamon.repo](https://nagstamon.de/repo/fedora/nagstamon.repo) into _/etc/yum.repos.d_:
