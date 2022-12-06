@@ -1,0 +1,5 @@
+[nagstamon-latest]
+name=nagstamon-latest
+baseurl=https://nagstamon.de/repo/rhel/latest
+enabled=1
+gpgcheck=0

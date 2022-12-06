@@ -1,0 +1,5 @@
+[nagstamon]
+name=nagstamon
+baseurl=https://nagstamon.de/repo/rhel/$releasever
+enabled=1
+gpgcheck=0
