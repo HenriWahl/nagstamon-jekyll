@@ -19,7 +19,7 @@ Get the latest binaries created automatically by [GitHub Actions](https://github
 If you are using the great [Chocolatey](https://chocolatey.org) you can install Nagstamon easily via:
 
 ```terminal
-c:\> choco install nagstamon
+choco install nagstamon
 ```
 
 ### Homebrew
@@ -27,7 +27,7 @@ c:\> choco install nagstamon
 If you are using [Homebrew](https://brew.sh) you can install Nagstamon easily via:
 
 ```terminal
-# brew install --cask nagstamon
+brew install --cask nagstamon
 ```
 
 ### Debian
@@ -35,7 +35,7 @@ If you are using [Homebrew](https://brew.sh) you can install Nagstamon easily vi
 If you are using any [Debian](https://www.debian.org)-based distro like [Ubuntu](https://www.ubuntu.com) you can install Nagstamon from their official repo:
 
 ```terminal
-# apt install nagstamon
+apt install nagstamon
 ```
 
 **Note:** the move to Qt6 made Ubuntu versions older than 20.04 not work anymore.
@@ -45,18 +45,18 @@ If you are using any [Debian](https://www.debian.org)-based distro like [Ubuntu]
 The **stable** release for Fedora is available via Nagstamon repository - just throw [https://nagstamon.de/repo/fedora/nagstamon.repo](https://nagstamon.de/repo/fedora/nagstamon.repo) into _/etc/yum.repos.d_:
 
 ```terminal
-# wget https://nagstamon.de/repo/fedora/nagstamon.repo -O /etc/yum.repos.d/nagstamon.repo
+wget https://nagstamon.de/repo/fedora/nagstamon.repo -O /etc/yum.repos.d/nagstamon.repo
 ```
 
 The **latest** release for Fedora is available too via Nagstamon repository - just throw [https://nagstamon.de/repo/fedora/nagstamon-latest.repo](https://nagstamon.de/repo/fedora/nagstamon-latest.repo) into _/etc/yum.repos.d_:
 
 ```terminal
-# wget https://nagstamon.de/repo/fedora/nagstamon-latest.repo -O /etc/yum.repos.d/nagstamon-latest.repo
+wget https://nagstamon.de/repo/fedora/nagstamon-latest.repo -O /etc/yum.repos.d/nagstamon-latest.repo
 ```
 
 Both versions simply get installed by:
 
 ```terminal
-# dnf install nagstamon
+dnf install nagstamon
 ```
 
