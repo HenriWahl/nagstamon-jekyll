@@ -1,0 +1,5 @@
+[nagstamon-latest]
+name=nagstamon-latest
+baseurl=https://nagstamon.de/repo/fedora/latest
+enabled=1
+gpgcheck=0
