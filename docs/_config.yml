@@ -51,6 +51,7 @@ header_pages:
 - download.md
 - features.md
 - documentation.md
+- contribution.md
 
 footer_icons:
 - username: nagstamon
