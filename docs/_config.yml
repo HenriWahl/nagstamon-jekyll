@@ -59,10 +59,6 @@ footer_icons:
   icon: minima-social-icons-github.svg
 - username: nagstamon
   url: https://twitter.com/nagstamon
-  icon: minima-social-icons-twitter.svg
-- username: nagstamon
-  url: https://fosstodon.org/@nagstamon
-  icon: minima-social-icons-mastodon.svg
 - username: rss feed
   url: https://nagstamon.de/feed
   icon: minima-social-icons-rss.svg
