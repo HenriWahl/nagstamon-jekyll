@@ -4,7 +4,7 @@ title: Download
 permalink: /download
 ---
 
-To support Nagstamon development just have a look at **[contributions](/contribution)**.
+To support Nagstamon development or donate just have a look at **[contribution](/contribution)**.
 
 ## Stable release
 
