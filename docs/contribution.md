@@ -22,4 +22,5 @@ GitHub Pages it is now an option to switch to another Markdown-to-HTML renderer 
 
 ## Donation
 
-To help out with paying **code signing**, domain and mail, a **coffee** or donate in general just use **[PayPal](https://paypal.me/nagstamon)**.
+To help out with paying **code signing**, domain and mail, a **coffee** or donate in general just use **[PayPal](https://paypal.me/nagstamon)**
+directly or send to **coffee@nagstamon.de**.
