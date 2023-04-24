@@ -4,6 +4,8 @@ title: Download
 permalink: /download
 ---
 
+To support Nagstamon development just have a look at **[contributions](/contribution)**.
+
 ## Stable release
 
 Get the latest stable release **3.10.1** from **[GitHub stable release](https://github.com/HenriWahl/Nagstamon/releases/tag/v3.10.1)**.
