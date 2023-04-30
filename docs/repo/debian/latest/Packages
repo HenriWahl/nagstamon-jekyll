@@ -1,0 +1,22 @@
+Package: nagstamon
+Version: 3.11.20230428
+Architecture: all
+Maintainer: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Installed-Size: 2038
+Depends: python3:any, python3-pkg-resources, python3-bs4, python3-lxml, python3-pyqt5, python3-pyqt5.qtsvg, python3-pyqt5.qtmultimedia, libqt5multimedia5-plugins, python3-requests, python3-requests-kerberos, python3-psutil, python3-dbus.mainloop.pyqt5, python3-keyring, python3-ewmh
+Recommends: python3-secretstorage
+Filename: ./nagstamon_3.11.20230428_all.deb
+Size: 434100
+MD5sum: ced2dcd6c3d3ddd9ede1cebfbb6f762f
+SHA1: 75e863d574cc98764a5da97f8679a4e8a6eaa70a
+SHA256: 81b88015792fcfd1a1adfe45fb4f50392c944eb0821acf049ebf238f71db14b7
+Section: utils
+Priority: optional
+Homepage: https://nagstamon.de
+Description: Nagios status monitor which takes place in systray or on desktop
+ Nagstamon is a Nagios status monitor which takes place in systray or
+ on desktop (GNOME, KDE) as floating statusbar to inform you in
+ realtime about the status of your Nagios and some of its derivatives monitored network.
+ It allows to connect to multiple Nagios, Icinga, Opsview, Centreon, Op5Monitor,
+ Checkmk Multisite, Thruk, Zabbix and Zenoss servers. Events could be handled by instant access to failed hosts/services.
+
