@@ -42,12 +42,21 @@ apt install nagstamon
 
 **Note:** the move to Qt6 made Ubuntu versions older than 20.04 not work anymore.
 
+If you want the **latest** release of Nagstamon you can add its Debian repository and GPG key to you sources:
+
+```terminal
+curl -o /etc/apt/trusted.gpg.d/nagstamon.asc https://nagstamon.de/repo/debian/latest/key.gpg
+echo "deb https://nagstamon.de/repo/debian/latest /" > /etc/apt/sources.list.d/nagstamon.list
+apt -y update
+apt install nagstamon
+```
+
 ### Fedora
 
 The **stable** release for Fedora is available via Nagstamon repository - just throw [https://nagstamon.de/repo/fedora/nagstamon.repo](https://nagstamon.de/repo/fedora/nagstamon.repo) into _/etc/yum.repos.d_:
 
 ```terminal
-wget https://nagstamon.de/repo/fedora/nagstamon.repo -O /etc/yum.repos.d/nagstamon.repo
+curl -o /etc/yum.repos.d/nagstamon.repo https://nagstamon.de/repo/fedora/nagstamon.repo
 ```
 
 The **latest** release for Fedora is available too via Nagstamon repository - just throw [https://nagstamon.de/repo/fedora/nagstamon-latest.repo](https://nagstamon.de/repo/fedora/nagstamon-latest.repo) into _/etc/yum.repos.d_:
