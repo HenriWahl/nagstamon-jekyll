@@ -8,7 +8,7 @@ To support Nagstamon development or donate just have a look at **[contribution](
 
 ## Stable release
 
-Get the latest stable release **3.10.1** from **[GitHub stable release](https://github.com/HenriWahl/Nagstamon/releases/tag/v3.10.1)**.
+Get the latest stable release **3.12.0** from **[GitHub stable release](https://github.com/HenriWahl/Nagstamon/releases/tag/v3.12.0)**.
 
 ## Latest development version
 
