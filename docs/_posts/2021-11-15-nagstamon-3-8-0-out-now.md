@@ -2,7 +2,7 @@
 layout: post
 title: Nagstamon 3.8.0 out now
 date: 2021-11-15 23:05:31
-categories: news
+categories: releases
 permalink: /nagstamon-3-8-0-out-now
 ---
 
