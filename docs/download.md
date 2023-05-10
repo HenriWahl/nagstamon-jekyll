@@ -71,3 +71,22 @@ Both versions simply get installed by:
 dnf install nagstamon
 ```
 
+### RedHat Linux 
+
+The **stable** release for RedHat Linux is available via Nagstamon repository - just throw [https://nagstamon.de/repo/rhel/nagstamon.repo](https://nagstamon.de/repo/fedora/nagstamon.repo) into _/etc/yum.repos.d_:
+
+```terminal
+curl -o /etc/yum.repos.d/nagstamon.repo https://nagstamon.de/repo/rhel/nagstamon.repo
+```
+
+The **latest** release for RedHat Linux is available too via Nagstamon repository - just throw [https://nagstamon.de/repo/rhel/nagstamon-latest.repo](https://nagstamon.de/repo/fedora/nagstamon-latest.repo) into _/etc/yum.repos.d_:
+
+```terminal
+wget https://nagstamon.de/repo/rhel/nagstamon-latest.repo -O /etc/yum.repos.d/nagstamon-latest.repo
+```
+
+Both versions simply get installed by:
+
+```terminal
+dnf install nagstamon
+```
