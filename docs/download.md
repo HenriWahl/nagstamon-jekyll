@@ -42,11 +42,27 @@ apt install nagstamon
 
 **Note:** the move to Qt6 made Ubuntu versions older than 20.04 not work anymore.
 
-If you want the **latest** release of Nagstamon you can add its Debian repository and GPG key to you sources:
+Whichever version you want to use - first you need to add the GPG key:
 
 ```terminal
 curl -o /etc/apt/trusted.gpg.d/nagstamon.asc https://nagstamon.de/repo/debian/latest/key.gpg
+```
+
+If you want the **stable** release of Nagstamon you can add its Debian repository and GPG key to you sources:
+
+```terminal
+echo "deb https://nagstamon.de/repo/debian/stable /" > /etc/apt/sources.list.d/nagstamon.list
+```
+
+If you want the **latest** release of Nagstamon you can add its Debian repository and GPG key to you sources:
+
+```terminal
 echo "deb https://nagstamon.de/repo/debian/latest /" > /etc/apt/sources.list.d/nagstamon.list
+```
+
+To finally **install** just do the apt mantra:
+
+```terminal
 apt -y update
 apt install nagstamon
 ```
