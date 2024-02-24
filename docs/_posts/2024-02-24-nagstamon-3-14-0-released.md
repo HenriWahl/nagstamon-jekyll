@@ -9,7 +9,7 @@ permalink: /nagstamon-3-14-0-released
 The last days of winter might be a good time for the release of Nagstamon 3.14 which kind of
 reminds of Pi.
 
-Since the last release a lot of changes and community contributions came in:
+Since the last release these changes and community contributions came in:
 
 - improved Wayland support
 - improved proxy support
