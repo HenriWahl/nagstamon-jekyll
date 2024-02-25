@@ -24,7 +24,7 @@ Since the last release these changes and community contributions came in:
 
 Thanks to all contributors!
 
-In case you want contribute financially you're welcome to donate via https://www.paypal.com/paypalme/nagstamon.
+In case you want contribute financially you're welcome to donate via [https://www.paypal.com/paypalme/nagstamon](https://www.paypal.com/paypalme/nagstamon).
 
 As always get it at [https://nagstamon.de/download](https://nagstamon.de/download).
 
