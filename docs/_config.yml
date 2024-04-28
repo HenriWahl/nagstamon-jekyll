@@ -85,3 +85,7 @@ exclude:
    - vendor/gems/
    - vendor/ruby/
    - minima-reboot.gemspec
+
+# for flathub verification
+include:
+  - .well-known
