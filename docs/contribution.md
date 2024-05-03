@@ -12,8 +12,6 @@ Aside of open bugs there are also ideas for new features available.
 ## Distribution
 
 If Nagstamon is still missing in your favorite **Linux distribution** or outdated you might help out there.
-Especially the **[Flatpak](https://flathub.org/de/apps/de.ifw_dresden.nagstamon)** is extremly dusty. It maybe 
-could even use a new start without the *ifw_dresden* name.
 
 ## Documentation
 

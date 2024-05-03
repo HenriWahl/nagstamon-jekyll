@@ -106,3 +106,13 @@ Both versions simply get installed by:
 ```terminal
 dnf install nagstamon
 ```
+
+### Flatpak from flathub.org
+
+The **stable** release is available at  [https://flathub.org/apps/de.nagstamon.nagstamon](https://flathub.org/apps/de.nagstamon.nagstamon).
+
+If your system already knows the flathub.org repository for flatpaks, then simply install by
+
+```terminal
+flatpak install flathub de.nagstamon.nagstamon
+```
