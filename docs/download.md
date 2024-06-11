@@ -78,7 +78,7 @@ curl -o /etc/yum.repos.d/nagstamon.repo https://nagstamon.de/repo/fedora/nagstam
 The **latest** release for Fedora is available too via Nagstamon repository - just throw [https://nagstamon.de/repo/fedora/nagstamon-latest.repo](https://nagstamon.de/repo/fedora/nagstamon-latest.repo) into _/etc/yum.repos.d_:
 
 ```terminal
-wget https://nagstamon.de/repo/fedora/nagstamon-latest.repo -O /etc/yum.repos.d/nagstamon-latest.repo
+curl -o /etc/yum.repos.d/nagstamon-latest.repo https://nagstamon.de/repo/fedora/nagstamon-latest.repo
 ```
 
 Both versions simply get installed by:
