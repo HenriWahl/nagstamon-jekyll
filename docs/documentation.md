@@ -47,7 +47,7 @@ c:\> "c:\Program Files\Nagstamon\nagstamon.exe" <your-custom-configdirectory>
 
 Alternatively you can download the matching **.zip** which contains a complete standalone Nagstamon.
 
-### Mac OS
+### macOS
 
 Since version 2.0 Nagstamon does not need any external package to run as it did before. Just download the **.dmg** disk image file and put the included Nagstamon app wherever you like – most probably the **/Applications** folder.
 
