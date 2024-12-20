@@ -6,10 +6,10 @@ Installed-Size: 2075
 Depends: python3:any, python3-pkg-resources, python3-bs4, python3-lxml, python3-packaging, python3-pyqt5, python3-pyqt5.qtsvg, python3-pyqt5.qtmultimedia, libqt5multimedia5-plugins, python3-requests, python3-requests-kerberos, python3-psutil, python3-dbus.mainloop.pyqt5, python3-keyring, python3-ewmh, python3-arrow
 Recommends: python3-secretstorage
 Filename: ./nagstamon_3.17-20241219_all.deb
-Size: 438696
-MD5sum: baf7ed077aa09b5e7c1cc74df0e0878b
-SHA1: 0a7522a1a8f1d5cfe24ad312763865626205af52
-SHA256: 67a2fb6c39260ab31eef080b43ade5222520eaad28a24f04f90449032e2b5e5a
+Size: 438888
+MD5sum: 78bcf29480031bfe55a5ee3dfd2629c5
+SHA1: 49d969af85599fb29ef64971d13bd1dbfcc22353
+SHA256: 9c5fb6f53c49039bc44fd8a2b6cf5a37cd6dd921986b74cd5a1226e0046b2678
 Section: utils
 Priority: optional
 Homepage: https://nagstamon.de
