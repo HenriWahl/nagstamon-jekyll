@@ -56,9 +56,6 @@ footer_icons:
 - username: nagstamon
   url: https://github.com/henriwahl/nagstamon
   icon: minima-social-icons-github.svg
-- username: nagstamon
-  url: https://twitter.com/nagstamon
-  icon: minima-social-icons-twitter.svg
 - username: rss feed
   url: https://nagstamon.de/feed
   icon: minima-social-icons-rss.svg
