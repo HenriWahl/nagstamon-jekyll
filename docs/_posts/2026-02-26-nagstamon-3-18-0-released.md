@@ -44,3 +44,5 @@ As always get your copy of Nagstamon 3.18.0 at [https://nagstamon.de/download](h
 
 Contributions are welcome at [https://github.com/HenriWahl/Nagstamon](https://github.com/HenriWahl/Nagstamon) as well as
 donations at [https://www.paypal.com/paypalme/nagstamon](https://www.paypal.com/paypalme/nagstamon).
+
+New: donating via **GitHub Sponsors** is now also possible: [https://github.com/sponsors/HenriWahl](https://github.com/sponsors/HenriWahl)
