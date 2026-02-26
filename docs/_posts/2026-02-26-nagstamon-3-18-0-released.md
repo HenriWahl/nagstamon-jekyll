@@ -40,7 +40,7 @@ All changes at a glance:
 - updated Qt6
 - code cleanup
 
-As always get your copy of Nagstamon 3.18.0 at [https://github.com/HenriWahl/Nagstamon/releases/tag/v3.18.0](https://github.com/HenriWahl/Nagstamon/releases/tag/v3.18.0)
+As always get your copy of Nagstamon 3.18.0 at [https://nagstamon.de/download](https://nagstamon.de/download)
 
 Contributions are welcome at [https://github.com/HenriWahl/Nagstamon](https://github.com/HenriWahl/Nagstamon) as well as
 donations at [https://www.paypal.com/paypalme/nagstamon](https://www.paypal.com/paypalme/nagstamon).
