@@ -23,4 +23,6 @@ GitHub Pages it is now an option to switch to another Markdown-to-HTML renderer 
 To help out with paying **code signing**, domain and mail, a **coffee** or donate in general just use **[PayPal](https://paypal.me/nagstamon)**
 directly or send to **coffee@nagstamon.de**.
 
+Also you can support the project via **GitHub Sponsors**:
+
 <iframe src="https://github.com/sponsors/HenriWahl/card" title="Sponsor HenriWahl" height="225" width="600" style="border: 0;"></iframe>
