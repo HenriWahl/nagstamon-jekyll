@@ -299,7 +299,7 @@ For further information please see [https://docs.python.org/howto/regex.html](ht
 
 If you do not use a [binary release](/download) of Nagstamon, the following requirements have to be fulfilled:
 
-- **Python** >= 3.6, available at [https://www.python.org/downloads/](https://www.python.org/downloads/)
+- **Python** >= 3.10, available at [https://www.python.org/downloads/](https://www.python.org/downloads/)
 - Several Python modules available via **PIP**:
     
     - **beautifulsoup4** – [http://www.crummy.com/software/BeautifulSoup/](http://www.crummy.com/software/BeautifulSoup/)
@@ -308,7 +308,7 @@ If you do not use a [binary release](/download) of Nagstamon, the following requ
     - **psutil** – [https://github.com/giampaolo/psutil](https://github.com/giampaolo/psutil)
     
     - **pypiwin32** – [https://pypi.python.org/pypi/pypiwin32](https://pypi.python.org/pypi/pypiwin32)
-    - **pyqt5** &gt;= 5.5 – [https://riverbankcomputing.com/software/pyqt/](https://riverbankcomputing.com/software/pyqt/)
+    - **pyqt6** &gt;= 6.10 – [https://riverbankcomputing.com/software/pyqt/](https://riverbankcomputing.com/software/pyqt/)
     - **pysocks** – [https://github.com/Anorov/PySocks](https://github.com/Anorov/PySocks)
     
     - **python-dateutil** – [https://dateutil.readthedocs.io/en/stable/](https://dateutil.readthedocs.io/en/stable/)
@@ -327,7 +327,7 @@ For creation of binary packages one might need to install the typical packaging 
 If you want to run Nagstamon from sources on Windows, you have to run this PIP command after installing Python. Note that even if there is a newer version right now only keyring 10.5.1 works as expected in Windows:
 
 ```terminal
-C:\python37\scripts\pip install -r build/requirements/windows.txt
+C:\python314\scripts\pip install -r build/requirements/windows.txt
 ```
 
 If you want to create binary packages with the distributed `build.py` script, you also need
@@ -338,7 +338,7 @@ If you want to create binary packages with the distributed `build.py` script, yo
 **PyInstaller** lastest development version which is known to work with Python 3.7 is needed so this one has to be pulled by pip:
 
 ```terminal
-C:\python37\scripts\pip install pyinstaller
+C:\python314\scripts\pip install pyinstaller
 ```
 
 ### macOS

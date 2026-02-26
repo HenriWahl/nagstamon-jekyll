@@ -47,6 +47,7 @@ Experimentally supported monitors:
 * [Sensu](https://sensu.io/)
 * [SNAG-View 3](https://www.snag-view.de/)
 * [Zenoss](https://zenoss.com/)
+* [LibreNMS](https://www.librenms.org/)
 
 ## Contact
 
