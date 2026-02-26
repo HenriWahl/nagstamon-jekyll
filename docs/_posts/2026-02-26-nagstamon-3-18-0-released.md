@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nagstamon supports web login
+title: Nagstamon 3.18.0 released
 date: 2026-02-26 02:26:00
 categories: releases
 permalink: /nagstamon-3-18-0-released
