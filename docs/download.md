@@ -123,5 +123,5 @@ The **stable** release is available at  [https://flathub.org/apps/de.nagstamon.n
 If your system already knows the flathub.org repository for flatpaks, then simply install by
 
 ```shell
-flatpak install flathub de.nagstamon.nagstamon
+flatpak install de.nagstamon.nagstamon
 ```
