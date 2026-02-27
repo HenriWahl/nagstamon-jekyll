@@ -59,7 +59,7 @@ footer_icons:
 - username: rss feed
   url: https://nagstamon.de/feed
   icon: minima-social-icons-rss.svg
-- username: nagstamon@mastodon
+- username: @nagstamon
   url: https://fosstodon.org/@nagstamon
   icon: mastodon-icon.svg
 
