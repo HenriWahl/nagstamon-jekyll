@@ -1,5 +1,0 @@
-[nagstamon]
-name=nagstamon
-baseurl=https://nagstamon.de/repo/fedora/$releasever
-enabled=1
-gpgcheck=0
