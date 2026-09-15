@@ -1,15 +1,15 @@
 Package: nagstamon
-Version: 3.19-20260829
+Version: 3.19-20260915
 Architecture: all
 Maintainer: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
-Installed-Size: 3465
+Installed-Size: 3482
 Depends: python3:any, libqt6multimedia6 | libqt5multimedia5-plugins, python3-bs4, python3-dbus.mainloop.pyqt6 | python3-dbus.mainloop.pyqt5, python3-lxml, python3-packaging, python3-pkg-resources, python3-pyqt6 | python3-pyqt5, pyqt6-dev-tools | pyqt5-dev-tools, python3-pyqt6.qtmultimedia | python3-pyqt5.qtmultimedia, python3-pyqt6.qtsvg | python3-pyqt5.qtsvg, python3-pyqt6.qtwebengine | python3-pyqt5.qtwebengine, python3-requests, python3-requests-kerberos, python3-psutil, python3-keyring, python3-ewmh, python3-arrow, python3-tzlocal
 Recommends: python3-secretstorage
-Filename: ./nagstamon_3.19-20260829_all.deb
-Size: 991224
-MD5sum: 7b335c9bc28fee4206e9ba0c30c7c84d
-SHA1: 01ee31e49815906e1f5db294d9149b11293fae27
-SHA256: d1f68a477bbee9bb4db8b98a84b0ead5a913ab91cccf58269580ffd6db1ae351
+Filename: ./nagstamon_3.19-20260915_all.deb
+Size: 995048
+MD5sum: 81577dc69061d0a6312ffa8cad40cbf7
+SHA1: c8ab98e0b07bb94c2014567419aa05f6eb3c5862
+SHA256: 99ce8c172ff37717623b1f00256f721d3b7fe2a700698351be77546eb2e2d739
 Section: utils
 Priority: optional
 Homepage: https://nagstamon.de
